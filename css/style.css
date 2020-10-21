@@ -151,10 +151,10 @@ footer{
 
 /* Navbar */
 header{
-  display:flex;
-  flex-flow: column nowrap;
   background: #fff;
   border-bottom: 3px solid #50C7C7;
+  display:flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 
@@ -165,7 +165,7 @@ header{
 .nav_links{
   display:flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   justify-content: center;
   align-items: center;
   /*Your code here again.*/
@@ -201,8 +201,7 @@ header{
   /* Navbar */
   header{
   display:flex;
-  flex-wrap: row nowrap;
-  justify-content:flex-start;
+  flex-direction: row;
   justify-content: space-between;
 
     /*Your code here again.*/  
