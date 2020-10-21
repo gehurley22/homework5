@@ -77,7 +77,6 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
 
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
@@ -85,7 +84,6 @@ footer{
 }
 
 .card {
-  display: flex;
   margin: 12px;
   background: #fff;
   border-radius: 7px;
@@ -189,7 +187,6 @@ header{
 
   /* Cards! */
   .card {
-    display:flex;
     flex-basis: 225px;
 
 
@@ -233,13 +230,17 @@ header{
   .gallery{
     display: none;
   }
+
+  #gallery{ 
+    display: none;
+  }
   .pricing{
     align-content: flex-start;
     flex-wrap: row nowrap;
   }
   body{
     background-image: none;
-    
+
   }
 
   /*Your code here again.*/
@@ -248,3 +249,9 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none; 
+  }
+}
